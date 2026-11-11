@@ -15,8 +15,21 @@ Navigate to the official antix downloads site: https://antixlinux.com/download/ 
 Next you'll want to install Rufus from https://rufus.ie/en/ Rufus will allow you to format your USB as boot-able. 
 After Rufus is installed choose your USB device and ISO in the dropdown menus and click START the rest of the options should be fine to leave as default. NOTE ANYTHING that you have on the USB you're formatting WILL be fully wiped. 
 ![Antix Downloads Site](images/03_Rufus.png)
+
 After Rufus has completed it's work you can remove the USB. 
+## Step 3:
+### Installing antix Linux using your bootable USB:
 
+- 1.Plug the USB Stick into the machine you intend to use as a server.
+- 2.Press power and then immediately press your Boot Select key on your keyboard. This key can vary depending on the manufacturer but its usually F2 or Del but if those don't work you can always Google what key to press based on the manufacturer of the PC you're using.
+- 3.Once into the boot select choose your USB as the boot option and you should be booted into the Live version of Antix Linux. There may be some prompts as you're booting in but just choose the default. 
+-  4.Once in you should see a screen like this:
+![Antix Downloads Site](images/04_Antix_Home_Screen.png)
 
+##Next open the antiX installer it should be sitting right on the desktop. Note: If prompted for a password the password is "demo"
+![Antix Downloads Site](images/05_Antix_Installer.png)
+Regular install using the entire disk should be fine if you don't plan on duel booting but if you do plan on duel booting a different OS choose Customize the disk layout. If customizing the disk layout simply choose the / in the drop down menu to point the root mount point to whatever partition you want to use as your Antix partition and leave the other partition untouched and un-formatted.
+You can then just hit next for all subsequent pages of the installer the default options should be fine. 
+Once the installer is done you can remove the USB and restart the system and it should boot into your full install of Antix Linux. 
 
 ```sudo nano /etc/wpa_supplicant/enterprise.conf```
