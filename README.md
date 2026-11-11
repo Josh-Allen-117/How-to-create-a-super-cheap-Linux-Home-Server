@@ -12,6 +12,10 @@
 ### Preparing the Antix Linux boot-able USB:
 Navigate to the official antix downloads site: https://antixlinux.com/download/ and choose the 64 bit full ISO whatever the newest version is. At time of writing the newest version is 26.1 
 ![Antix Downloads Site](images/02_Antix_Site.png)
+Next you'll want to install Rufus from https://rufus.ie/en/ Rufus will allow you to format your USB as boot-able. 
+After Rufus is installed choose your USB device and ISO in the dropdown menus and click START the rest of the options should be fine to leave as default. NOTE ANYTHING that you have on the USB you're formatting WILL be fully wiped. 
+![Antix Downloads Site](images/03_Rufus.png)
+
 
 
 ```sudo nano /etc/wpa_supplicant/enterprise.conf```
