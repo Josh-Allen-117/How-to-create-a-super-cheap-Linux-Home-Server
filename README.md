@@ -15,6 +15,7 @@ Navigate to the official antix downloads site: https://antixlinux.com/download/ 
 Next you'll want to install Rufus from https://rufus.ie/en/ Rufus will allow you to format your USB as boot-able. 
 After Rufus is installed choose your USB device and ISO in the dropdown menus and click START the rest of the options should be fine to leave as default. NOTE ANYTHING that you have on the USB you're formatting WILL be fully wiped. 
 ![Antix Downloads Site](images/03_Rufus.png)
+After Rufus has completed it's work you can remove the USB. 
 
 
 
