@@ -2,7 +2,7 @@
 ## What you'll need for this project:
 
 - A separate PC we won't be using as our home server. Either a Windows PC or a modern Linux machine will work fine. 
-- A USB stick to use as a boot-able drive. 8 GB of storage or higher is recomended
+- A USB stick to use as a boot-able drive. 8 GB of storage or higher is recommended
 - A separate PC with it's own mouse and keyboard to use as our Linux home server
 ## Step 1:
 ### The first step is to find a good machine.
@@ -13,12 +13,12 @@
 Navigate to the official antix downloads site: https://antixlinux.com/download/ and choose the 64 bit full ISO whatever the newest version is. At time of writing the newest version is 26.1 
 ![Antix Downloads Site](images/02_Antix_Site.png)
 Next you'll want to install Rufus from https://rufus.ie/en/ Rufus will allow you to format your USB as boot-able. 
-After Rufus is installed choose your USB device and ISO in the dropdown menus and click START the rest of the options should be fine to leave as default. NOTE ANYTHING that you have on the USB you're formatting WILL be fully wiped. 
+After Rufus is installed choose your USB device and ISO in the drop down menus and click START the rest of the options should be fine to leave as default. NOTE ANYTHING that you have on the USB you're formatting WILL be fully wiped. 
 ![Antix Downloads Site](images/03_Rufus.png)
 
 After Rufus has completed it's work you can remove the USB. 
 ## Step 3:
-### Installing antix Linux using your bootable USB:
+### Installing antix Linux using your boot-able USB:
 
 - 1.Plug the USB Stick into the machine you intend to use as a server.
 - 2.Press power and then immediately press your Boot Select key on your keyboard. This key can vary depending on the manufacturer but its usually F2 or Del but if those don't work you can always Google what key to press based on the manufacturer of the PC you're using.
@@ -42,5 +42,12 @@ However if you're on an enterprise or university WiFi that requires a username i
 ![Antix Downloads Site](images/06_nano_wpa_supplicant.png)
 - Step 2: Fill out the nano file exactly as shown in the image below.
 ![Antix Downloads Site](images/07_wpa_supplicant_config.png)
+To save your changes to the nano file hit CTRL+O then hit enter to confirm the save than hit CTRL + X to exit the nano file
+- Step 3: run the following command
+![Supplicant_Command](images/08_Initailize_supplicant.png)
+If successful your command output should look like this:
+![Supplicant_Command_Output](images/09_Supplicant_Working.png)
+If this is your output press CTRL+Z to pause the command and once you have control of the terminal back type `bg` and hit enter to keep the command running in the background. If you get an error like "Kernel reports: Match already configured!" that just means you have another instance of wpa_supplicant already running. If this is the case use the following command: ```sudo killall wpa_supplicant``` This command is also what you should use anytime you want to disable your WiFI connection for any reason. I would HIGHLY recommend creating a text file on your desktop with both of these commands in it because you will most definitely want to be able to refer back to these commands at a later date if you forget them. There will also be other commands that you'll use frequently that we'll discuss later on so good to make a text file now and write those down as we get to them.  
+
 
 ```sudo nano /etc/wpa_supplicant/enterprise.conf```
