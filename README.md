@@ -38,7 +38,7 @@ If you're on a home network that requires only a SSID and password to connect yo
 
 However if you're on an enterprise or university WiFi that requires a username in addition to SSID and password like I am the process isn't quite as simple. 
 
-- Step 1:Open a terminal from the menu at the bottom left and enter the command: sudo nano /etc/wpa_supplicant/enterprise.conf and hit enter as shown below.  
+- Step 1:Open a terminal from the menu at the bottom left and enter the command: `sudo nano /etc/wpa_supplicant/enterprise.conf` and hit enter as shown below.  
 ![Antix Downloads Site](images/06_nano_wpa_supplicant.png)
 - Step 2: Fill out the nano file exactly as shown in the image below.
 ![Antix Downloads Site](images/07_wpa_supplicant_config.png)
