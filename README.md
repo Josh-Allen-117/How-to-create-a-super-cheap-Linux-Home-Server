@@ -26,10 +26,21 @@ After Rufus has completed it's work you can remove the USB.
 -  4.Once in you should see a screen like this:
 ![Antix Downloads Site](images/04_Antix_Home_Screen.png)
 
-##Next open the antiX installer it should be sitting right on the desktop. Note: If prompted for a password the password is "demo"
+## Next open the antiX installer it should be sitting right on the desktop. Note: If prompted for a password the password is "demo"
 ![Antix Downloads Site](images/05_Antix_Installer.png)
 Regular install using the entire disk should be fine if you don't plan on duel booting but if you do plan on duel booting a different OS choose Customize the disk layout. If customizing the disk layout simply choose the / in the drop down menu to point the root mount point to whatever partition you want to use as your Antix partition and leave the other partition untouched and un-formatted.
 You can then just hit next for all subsequent pages of the installer the default options should be fine. 
 Once the installer is done you can remove the USB and restart the system and it should boot into your full install of Antix Linux. 
+
+## Step 4:
+### Connecting to the internet 
+If you're on a home network that requires only a SSID and password to connect you're in luck. In that case the process is super simple. Just use the connman system GUI application, navigate to the wireless tab, click your network, click connect, enter your password and you're in!
+
+However if you're on an enterprise or university WiFi that requires a username in addition to SSID and password like I am the process isn't quite as simple. 
+
+- Step 1:Open a terminal from the menu at the bottom left and enter the command: sudo nano /etc/wpa_supplicant/enterprise.conf and hit enter as shown below.  
+![Antix Downloads Site](images/06_nano_wpa_supplicant.png)
+- Step 2: Fill out the nano file exactly as shown in the image below.
+![Antix Downloads Site](images/07_wpa_supplicant_config.png)
 
 ```sudo nano /etc/wpa_supplicant/enterprise.conf```
