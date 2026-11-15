@@ -54,7 +54,8 @@ If this is your output press CTRL+Z to pause the command and once you have contr
 
 A VPN is always good to have and a necessary tool if you're on a university wifi like I am or anywhere that your internet might be restricted. The first step is to navigate to https://proton.me/ and either sign in or make an account. Its free! Then navigate to the Wireguard tab on the left side of the screen. Select GNU/Linux as your platform then hit create then download.  
 ![Proton_wireguard_download](images/10_Wireguard_Download.png)
-
-
+It is HIGHLY reccomended to shorten the name of this file as any file wireguard file longer than 15 characters will cause an error.  
+Then in your antix terminal type `sudo apt update` and hit enter then type `sudo apt install wireguard-tools openresolv` and hit enter. 
+Next run this command `sudo cp ~/Downloads/your-file.conf /etc/wireguard/proton.conf` with the first half of the command pointing to wherever you downloaded your .conf file to, usually downloads. This will create a copy of your .conf file in your root directory. Next run the command `sudo chmod 600 /etc/wireguard/proton.conf` this will give the user read and write access to the file. Next run `sudo wg-quick up proton` this will initialize your wireguard connection. To test the connection you can run `sudo wg show` to show whether or not your VPN is active and you can test your connection to the internet by running `curl https://ipinfo.io` this will show you where your VPN is routing your traffic through and your ip. 
 
 ```sudo nano /etc/wpa_supplicant/enterprise.conf```
