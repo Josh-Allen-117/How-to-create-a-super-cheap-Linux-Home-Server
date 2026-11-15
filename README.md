@@ -47,7 +47,14 @@ To save your changes to the nano file hit CTRL+O then hit enter to confirm the s
 ![Supplicant_Command](images/08_Initailize_supplicant.png)
 If successful your command output should look like this:
 ![Supplicant_Command_Output](images/09_Supplicant_Working.png)
-If this is your output press CTRL+Z to pause the command and once you have control of the terminal back type `bg` and hit enter to keep the command running in the background. If you get an error like "Kernel reports: Match already configured!" that just means you have another instance of wpa_supplicant already running. If this is the case use the following command: ```sudo killall wpa_supplicant``` This command is also what you should use anytime you want to disable your WiFI connection for any reason. I would HIGHLY recommend creating a text file on your desktop with both of these commands in it because you will most definitely want to be able to refer back to these commands at a later date if you forget them. There will also be other commands that you'll use frequently that we'll discuss later on so good to make a text file now and write those down as we get to them.  
+If this is your output press CTRL+Z to pause the command and once you have control of the terminal back type `bg` and hit enter to keep the command running in the background. If you get an error like "Kernel reports: Match already configured!" that just means you have another instance of wpa_supplicant already running. If this is the case use the following command: ```sudo killall wpa_supplicant``` This command is also what you should use anytime you want to disable your WiFI connection for any reason. I would HIGHLY recommend creating a text file on your desktop with both of these commands in it because you will most definitely want to be able to refer back to these commands at a later date if you forget them. There will also be other commands that you'll use frequently that we'll discuss later on so good to make a text file now and write those down as we get to them.
+
+## Step 5
+### Installing and setting up a VPN
+
+A VPN is always good to have and a necessary tool if you're on a university wifi like I am or anywhere that your internet might be restricted. The first step is to navigate to https://proton.me/ and either sign in or make an account. Its free! Then navigate to the Wireguard tab on the left side of the screen. Select GNU/Linux as your platform then hit create then download.  
+![Proton_wireguard_download](images/10_Wireguard_Download.png)
+
 
 
 ```sudo nano /etc/wpa_supplicant/enterprise.conf```
