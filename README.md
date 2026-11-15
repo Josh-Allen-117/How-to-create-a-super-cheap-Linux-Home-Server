@@ -56,6 +56,9 @@ A VPN is always good to have and a necessary tool if you're on a university wifi
 ![Proton_wireguard_download](images/10_Wireguard_Download.png)
 It is HIGHLY reccomended to shorten the name of this file as any file wireguard file longer than 15 characters will cause an error.  
 Then in your antix terminal type `sudo apt update` and hit enter then type `sudo apt install wireguard-tools openresolv` and hit enter. 
-Next run this command `sudo cp ~/Downloads/your-file.conf /etc/wireguard/proton.conf` with the first half of the command pointing to wherever you downloaded your .conf file to, usually downloads. This will create a copy of your .conf file in your root directory. Next run the command `sudo chmod 600 /etc/wireguard/proton.conf` this will give the user read and write access to the file. Next run `sudo wg-quick up proton` this will initialize your wireguard connection. To test the connection you can run `sudo wg show` to show whether or not your VPN is active and you can test your connection to the internet by running `curl https://ipinfo.io` this will show you where your VPN is routing your traffic through and your ip. 
+Next run this command `sudo cp ~/Downloads/your-file.conf /etc/wireguard/proton.conf` with the first half of the command pointing to wherever you downloaded your .conf file to, usually downloads. This will create a copy of your .conf file in your root directory. Next run the command `sudo chmod 600 /etc/wireguard/proton.conf` this will give the user read and write access to the file. Next run `sudo wg-quick up proton` this will initialize your wireguard connection. To test the connection you can run `sudo wg show` to show whether or not your VPN is active and you can test your connection to the internet by running `curl https://ipinfo.io` this will show you where your VPN is routing your traffic through and your ip. To disable wireguard you can run `sudo wg-quick down proton`
 
-```sudo nano /etc/wpa_supplicant/enterprise.conf```
+## Step 6
+### Installing and setting up a tor-renting client. 
+For the ability to torrent files a torrent client is great to have. However on the free tier of Proton VPN Peer to Peer connections which is what torrenting is built on is blocked. There are two methods to get arround this restriction. 
+- 1.If you have a Proton vpn 
