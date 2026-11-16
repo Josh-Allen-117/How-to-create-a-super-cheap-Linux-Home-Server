@@ -1,4 +1,4 @@
-# Title: How to create a super cheap Linux Home Server
+ # Title: How to create a super cheap Linux Home Server
 ## What you'll need for this project:
 
 - A separate PC we won't be using as our home server. Either a Windows PC or a modern Linux machine will work fine. 
