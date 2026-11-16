@@ -69,4 +69,9 @@ To use Tribler or whatever torrent client you've installed you'll need magnet li
 Next right click on the torrent you are downloading and go to anonymity and make sure it is set to at least 1 hops. These hops allow our P2P traffic to be disguised as normal traffic and evading Proton's policy of no P2P traffic on their free plan.  
 ![Tribler_Hops](images/12_Tribler_Hops.png)
 
+## Step 7 
+### Installing and setting up Jellyfin
+Jellyfin is a free and open-source media server that lets you host and stream your own digital media collection—such as movies, TV shows, music, books, and photos—to your devices like a personal Netflix. To install Jellyfin go to https://repo.jellyfin.org/?path=/server/debian/latest-stable/amd64 or simply go to the main downloads page>Full repository>server>Debian/GNU Linux packages(.deb)> Current Stable> AMD64 and that should take you to the repo where you can download the .deb files you'll need.  
+![Deb_Packages](images/13_Deb_Packages.png)
+
 
